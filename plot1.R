@@ -25,7 +25,7 @@ subdata2 <- subset(alldata, alldata$Date=="2007-2-2")
 data <- rbind(subdata1, subdata2)
 
 #Set up PNG device to save the plot as a PNG file
-dev.copy(png,'plot1.png')
+png('plot1.png')
 
 #Produce the plot1 histogram setting the colour to be red and improving the x label and heading text
 hist(data$Global_active_power, col="red", main="Global Active Power", xlab="Global Active Power (kilowatts)")
